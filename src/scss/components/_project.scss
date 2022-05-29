@@ -1,0 +1,47 @@
+.project {
+  display: flex;
+  padding: 30px 0 25px;
+  border-bottom: 1px solid var(--color-shark);
+  &__image {
+    margin-right: 70px;
+  }
+  &__info {
+    padding: 27px 0;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: var(--color-shark);
+    margin-bottom: 47px;
+  }
+  &__list {
+    margin-bottom: 72px;
+    margin-right: 36px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-shark);
+    margin-bottom: 14px;
+  }
+  &__item-name {
+    max-width: 80px;
+    margin-right: 72px;
+  }
+  &__item-info {
+    max-width: 570px;
+  }
+  &__bottom {
+    @include flex-all-sb;
+  }
+  &__hash {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-shuttle);
+  }
+  &__btn {
+    display: inline-block;
+  }
+}

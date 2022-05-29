@@ -1,6 +1,7 @@
 .hero {
-  text-align: center;
   position: relative;
+  font-size: 0;
+  text-align: center;
   &::before {
     content: "";
     position: absolute;

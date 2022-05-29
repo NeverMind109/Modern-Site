@@ -3,7 +3,10 @@
 @import "mixins";
 @import "fonts";
 @import "settings";
-
 // подключения компонентов страницы
+@import "./components/project";
+
+// подключения секций страницы
 @import "./components/header";
 @import "./components/hero";
+@import "./components/work";
