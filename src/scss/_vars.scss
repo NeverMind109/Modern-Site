@@ -1,0 +1,22 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Aileron", sans-serif;
+  --content-width: 1372px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --color-light: #fff;
+  --color-black: #000;
+  --color-accent: #f9cdcd;
+
+  --color-shark: #1f2124;
+  --color-scorpion: #5e5e5e;
+
+  --color-alabaster: #fcfcfc;
+  --color-mercury: #e7e7e7;
+  --color-pointer: #fefcff;
+  --color-footer: #f2f2f2;
+}
