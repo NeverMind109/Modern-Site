@@ -164,11 +164,21 @@ a {
   border: 1px solid var(--color-light);
   border-radius: 30px;
   padding: 10px 35px;
+  transition: color 0.2s, border 0.2s;
+  &:hover {
+    border: 1px solid var(--color-gray);
+    color: var(--color-gray);
+  }
   &--black {
     font-size: 14px;
     line-height: 17px;
     padding: 10px 40px;
     color: var(--color-black);
     border: 1px solid var(--color-black);
+    transition: color 0.2s, border 0.2s;
+    &:hover {
+      border: 1px solid var(--color-shark);
+      color: var(--color-shark);
+    }
   }
 }
