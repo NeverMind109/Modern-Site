@@ -9,42 +9,89 @@
   &__title {
     color: var(--color-accent);
     margin-bottom: 88px;
+
+    @include tablet {
+      margin-bottom: 45px;
+    }
+    @include mobile {
+      margin-bottom: 25px;
+    }
   }
   &__subtitle {
     max-width: 469px;
     letter-spacing: -2px;
     color: #f2f4f3;
     margin-left: auto;
+
+    @include tablet {
+      max-width: none;
+      margin-left: 0;
+      letter-spacing: 1px;
+    }
   }
   &__item {
     border-top: 1px solid var(--color-accent);
     margin-bottom: 56px;
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  @include desktop {
+    padding: 150px 0 75px;
+  }
+  @include tablet {
+    padding: 120px 0 60px;
   }
 }
 .service {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: minmax(300px, 43%) 1fr 1fr;
   color: var(--color-accent);
   padding-top: 32px;
+
+  @include desktop {
+    grid-template-columns: minmax(300px, 33%) 1fr 1fr;
+  }
   &__title {
-    grid-column: 5 span;
+    grid-column: 1 span;
     font-weight: 700;
     font-size: 34px;
     line-height: 110%;
     letter-spacing: -2px;
     text-transform: uppercase;
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
   }
   &__list {
-    grid-column: 7 span;
+    grid-column: 2 span;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 59px;
     column-gap: 150px;
+
+    @include desktop {
+      column-gap: 100px;
+    }
+    @include tablet {
+      row-gap: 30px;
+      column-gap: 35px;
+    }
+    @include mobile {
+      grid-column: 3 span;
+    }
   }
   &__item {
-    grid-column: 3 span;
+    grid-column: 1 span;
     padding-top: 14px;
-    padding-left: 9px;
+
+    @include tablet {
+      grid-column: 2 span;
+      padding: 0;
+    }
   }
   &__subtitle {
     font-weight: 600;

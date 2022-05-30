@@ -1,11 +1,16 @@
 <section class="hero">
-  <img
-    class="hero__img"
-    src="img/hero-img.jpg"
-    alt=""
-    width="1440"
-    height="800"
-  />
+  <picture>
+    <source srcset="img/hero-img.avif" type="image/avif" />
+    <source srcset="img/hero-img.webp" type="image/webp" />
+    <img
+      class="hero__img"
+      loading="lazy"
+      src="img/hero-img.jpg"
+      width="1440"
+      height="800"
+      alt=""
+    />
+  </picture>
   <div class="hero__wrapper">
     <h1 class="hero__title">
       Purpose-driven experiences convert customer attention and loyalty
@@ -14,6 +19,8 @@
       Modernsite designs and develops beautifully designed and cutting-edge
       e-commerce and small business websites around customer needs.
     </p>
-    <a class="btn hero__btn" href="#">Start Growing</a>
+    <a class="btn hero__btn" href="#" aria-label="Start Growing"
+      >Start Growing</a
+    >
   </div>
 </section>

@@ -2,19 +2,41 @@
   background-color: var(--color-footer);
   &__top {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 90px 0 96px;
+
+    @include desktop {
+      padding: 75px 0;
+    }
+    @include tablet {
+      padding: 60px 0;
+    }
   }
   &__subscribe {
-    grid-column: 6 span;
+    grid-column: 1 span;
+
+    @include tablet {
+      grid-column: 2 span;
+      text-align: left;
+      margin: 0 auto;
+    }
   }
   &__logo {
     display: inline-block;
     margin: 28px 0 125px;
+
+    @include tablet {
+      margin: 0 0 50px;
+    }
   }
   &__form {
     position: relative;
     max-width: 437px;
+
+    @include tablet {
+      max-width: none;
+      margin-bottom: 50px;
+    }
   }
   &__form-title {
     display: inline-block;
@@ -52,13 +74,34 @@
     }
   }
   &__nav {
-    grid-column: 6 span;
+    grid-column: 1 span;
     padding-left: 17px;
+
+    @include tablet {
+      grid-column: 2 span;
+      padding: 0;
+      margin: 0 auto 0;
+    }
   }
   &__title {
     max-width: 510px;
     color: var(--color-shark);
     margin-bottom: 70px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+  &__title-mobile {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      font-size: 22px;
+      max-width: none;
+      text-align: left;
+      margin: 0 auto 50px;
+    }
   }
   &__nav-wrapper {
     display: flex;
@@ -66,6 +109,10 @@
   &__item {
     &:not(:last-child) {
       margin-right: 150px;
+
+      @include tablet {
+        margin-right: 82px;
+      }
     }
   }
   &__item-title {

@@ -12,9 +12,16 @@
   &__logo {
     padding-left: 38px;
     margin-left: auto;
+
+    @include tablet {
+      padding: 0;
+      margin-left: 0;
+    }
   }
 }
+
 .burger {
   @include burger;
+  z-index: 101;
   margin-left: auto;
 }
